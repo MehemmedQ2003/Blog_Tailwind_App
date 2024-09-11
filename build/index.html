@@ -1,0 +1,520 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;1,8..144,400;1,8..144,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="text-gray-600 font-poppins">
+
+  <!-- Navbar Start -->
+  <nav class="bg-slate-300 shadow-sm shadow-slate-300">
+    <div class="container mx-auto px-4 py-3 flex items-center">
+      <a href="blog.html">Logo</a>
+      <div class="ml-12 lg:flex space-x-5 hidden">
+        <a href="blog.html" class="flex items-center hover:text-gray-900 transition ">
+          <span class="mr-2"> <i class="fa-solid fa-house"></i> </span>
+          Home
+        </a>
+      </div>
+      <div class="ml-12 lg:flex space-x-5 hidden">
+        <a href="blog.html" class="flex items-center hover:text-gray-900 transition ">
+          <span class="mr-2"> <i class="fa-solid fa-cloud"></i> </span>
+          About
+        </a>
+      </div>
+      <div class="ml-12 lg:flex space-x-5 hidden">
+        <a href="blog.html" class="flex items-center hover:text-gray-900 transition ">
+          <span class="mr-2"> <i class="fa-solid fa-address-book"></i> </span>
+          Contact
+        </a>
+      </div>
+      <div class="relative ml-auto hidden lg:block">
+        <span class="absolute left-3 text-sm text-gray-600">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+        <input type="text" placeholder="Search..."
+          class="block w-full rounded-3xl pl-9 pr-2 focus:outline-none bg-gray-200 text-sm text-gray-600 shadow-sm shadow-slate-300 ">
+      </div>
+      <div class="ml-5">
+        <a href="blog.html" class="flex items-center font-semibold text-gray-600  hover:text-gray-900 transition">
+          <span class="mr-2"><i class="fa-solid fa-user"></i></span>
+          Login/Register
+        </a>
+      </div>
+      <div class="text-xl text-gray-700 cursor-pointer ml-4 xl:hidden block hover:text-blue-800 transition"
+        id="open_sidebar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+
+  <!-- Sidebar Start -->
+  <div class="py-12 bg-gray-200">
+    <div class="container mx-auto px-4 flex flex-wrap">
+      <div class="w-full md:w-3/12 lg:w-3/12 xl:w-3/12 mb-4">
+        <div class="bg-white shadow-sm shadow-white rounded-xl p-4 mr-4">
+          <h3 class="text-xl font-semibold text-gray-800 font-roboto">Categories</h3>
+          <div class="text-gray-500 space-y-2 mt-4">
+            <a href="" class="flex items-center font-semibold uppercase hover:text-gray-900 transition">
+              <span class="mr-2">
+                <i class="fa-solid fa-folder"></i>
+              </span>
+              <span> Food </span>
+              <span class="ml-auto"> (10) </span>
+            </a>
+            <a href="" class="flex items-center font-semibold uppercase hover:text-gray-900 transition">
+              <span class="mr-2">
+                <i class="fa-solid fa-folder"></i>
+              </span>
+              <span> Technology </span>
+              <span class="ml-auto"> (1) </span>
+            </a>
+            <a href="" class="flex items-center font-semibold uppercase hover:text-gray-900 transition">
+              <span class="mr-2">
+                <i class="fa-solid fa-folder"></i>
+              </span>
+              <span> Fashion </span>
+              <span class="ml-auto"> (6) </span>
+            </a>
+            <a href="" class="flex items-center font-semibold uppercase hover:text-gray-900 transition">
+              <span class="mr-2">
+                <i class="fa-solid fa-folder"></i>
+              </span>
+              <span> Music </span>
+              <span class="ml-auto"> (10) </span>
+            </a>
+            <a href="" class="flex items-center font-semibold uppercase hover:text-gray-900 transition">
+              <span class="mr-2">
+                <i class="fa-solid fa-folder"></i>
+              </span>
+              <span> People </span>
+              <span class="ml-auto"> (4) </span>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white shadow-sm shadow-white rounded-xl p-4 mt-5 mr-4">
+          <h3 class="text-xl font-semibold text-gray-800 font-roboto">Random Post</h3>
+          <div class="mt-4">
+            <a href="blog.html" class="flex group mt-4">
+              <div class="flex-shrink-0">
+                <img src="./img/blog_1.jpg" class="h-14 w-20 rounded object-cover group-hover:brightness-50">
+              </div>
+              <div class="flex-grow pl-3">
+                <h5 class="text-sm block font-roboto font-semibold transition group-hover:text-gray-900">
+                  Lorem ipsum dolor sit amet dolor adipisicing.
+                </h5>
+                <div class="flex text-gray-400 text-xs items-center mt-1">
+                  <span class="mr-2 text-xs">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  May 29 2023
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mt-4">
+            <a href="blog.html" class="flex group mt-4">
+              <div class="flex-shrink-0">
+                <img src="./img/blog_2.jpg" class="h-14 w-20 rounded object-cover group-hover:brightness-50">
+              </div>
+              <div class="flex-grow pl-3">
+                <h5 class="text-sm block font-roboto font-semibold transition group-hover:text-gray-900">
+                  Lorem ipsum dolor sit amet dolor adipisicing.
+                </h5>
+                <div class="flex text-gray-400 text-xs items-center mt-1">
+                  <span class="mr-2 text-xs">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  May 29 2023
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mt-4">
+            <a href="blog.html" class="flex group mt-4">
+              <div class="flex-shrink-0">
+                <img src="./img/blog_3.jpg" class="h-14 w-20 rounded object-cover group-hover:brightness-50">
+              </div>
+              <div class="flex-grow pl-3">
+                <h5 class="text-sm block font-roboto font-semibold transition group-hover:text-gray-900">
+                  Lorem ipsum dolor sit amet dolor adipisicing.
+                </h5>
+                <div class="flex text-gray-400 text-xs items-center mt-1">
+                  <span class="mr-2 text-xs">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  May 29 2023
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="w-full md:w-6/12 lg:w-6/12 xl:w-6/12">
+        <div class="flex bg-white shadow-sm shadow-white px-3 py-3 justify-between items-center rounded-xl">
+          <h3 class="text-base uppercase font-semibold font-roboto">Business</h3>
+          <a href="blog.html"
+            class="text-white py-1 px-3 rounded-xl  bg-slate-950 border border-rose-950 hover:text-stone-400 transition ">See
+            more...</a>
+        </div>
+        <div class="rounded-xl bg-white overflow-hidden shadow-sm">
+          <a href="blog.html" class="block rounded-xl overflow-hidden">
+            <img class="w-full h-96 object-cover transform hover:scale-110 transition duration-500"
+              src="img/blog_1.jpg" />
+          </a>
+          <div class="p-4 pb-5">
+            <a href="blog.html">
+              <h2 class="block text-xl font-semibold font-roboto text-gray-600 hover:text-gray-950 transition">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, vel.
+              </h2>
+            </a>
+            <p class="text-gray-400 text-sm mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas libero nobis fuga porro aliquid, voluptatum
+              cumque cupiditate facere nisi debitis quibusdam eos impedit, repudiandae ad ipsam quae architecto sed rem!
+            </p>
+            <div class="mt-3 flex space-x-4">
+              <div class="flex text-gray-400 text-sm items-center">
+                <span class="mr-2 text-sm">
+                  <i class="fa-solid fa-user"></i>
+                </span>
+                Administrator
+              </div>
+              <div class="flex text-gray-400 text-sm items-center">
+                <span class="mr-2 text-sm">
+                  <i class="fa-solid fa-clock"></i>
+                </span>
+                May 19 2023
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 mt-4 ">
+          <div class="rounded-xl p-4 pb-5 m-2 bg-white overflow-hidden shadow-sm">
+            <a href="blog.html" class="block rounded-xl overflow-hidden">
+              <img class="w-full h-96 object-cover transform hover:scale-110 transition duration-500"
+                src="img/blog_2.jpg" />
+            </a>
+            <div class="p-4 pb-5">
+              <a href="blog.html">
+                <h2 class="block text-xl font-semibold font-roboto text-gray-600 hover:text-gray-950 transition">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, vel.
+                </h2>
+              </a>
+              <p class="text-gray-400 text-sm mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas libero nobis fuga porro aliquid,
+                voluptatum cumque cupiditate facere nisi debitis quibusdam eos impedit, repudiandae ad ipsam quae
+                architecto sed rem!
+              </p>
+              <div class="mt-3 flex space-x-4">
+                <div class="flex text-gray-400 text-sm items-center">
+                  <span class="mr-2 text-sm">
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                  Administrator
+                </div>
+                <div class="flex text-gray-400 text-sm items-center">
+                  <span class="mr-2 text-sm">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  May 19 2023
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-xl p-4 pb-5 m-2 bg-white overflow-hidden shadow-sm">
+            <a href="blog.html" class="block rounded-xl overflow-hidden">
+              <img class="w-full h-96 object-cover transform hover:scale-110 transition duration-500"
+                src="img/blog_3.jpg" />
+            </a>
+            <div class="p-4 pb-5">
+              <a href="blog.html">
+                <h2 class="block text-xl font-semibold font-roboto text-gray-600 hover:text-gray-950 transition">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, vel.
+                </h2>
+              </a>
+              <p class="text-gray-400 text-sm mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas libero nobis fuga porro aliquid,
+                voluptatum cumque cupiditate facere nisi debitis quibusdam eos impedit, repudiandae ad ipsam quae
+                architecto sed rem!
+              </p>
+              <div class="mt-3 flex space-x-4">
+                <div class="flex text-gray-400 text-sm items-center">
+                  <span class="mr-2 text-sm">
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                  Administrator
+                </div>
+                <div class="flex text-gray-400 text-sm items-center">
+                  <span class="mr-2 text-sm">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  May 19 2023
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-xl p-4 pb-5 m-2 bg-white overflow-hidden shadow-sm">
+            <a href="blog.html" class="block rounded-xl overflow-hidden">
+              <img class="w-full h-96 object-cover transform hover:scale-110 transition duration-500"
+                src="img/blog_4.png" />
+            </a>
+            <div class="p-4 pb-5">
+              <a href="blog.html">
+                <h2 class="block text-xl font-semibold font-roboto text-gray-600 hover:text-gray-950 transition">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, vel.
+                </h2>
+              </a>
+              <p class="text-gray-400 text-sm mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas libero nobis fuga porro aliquid,
+                voluptatum cumque cupiditate facere nisi debitis quibusdam eos impedit, repudiandae ad ipsam quae
+                architecto sed rem!
+              </p>
+              <div class="mt-3 flex space-x-4">
+                <div class="flex text-gray-400 text-sm items-center">
+                  <span class="mr-2 text-sm">
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                  Administrator
+                </div>
+                <div class="flex text-gray-400 text-sm items-center">
+                  <span class="mr-2 text-sm">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  May 19 2023
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-xl p-4 pb-5 m-2 bg-white overflow-hidden shadow-sm">
+            <a href="blog.html" class="block rounded-xl overflow-hidden">
+              <img class="w-full h-96 object-cover transform hover:scale-110 transition duration-500"
+                src="img/blog_5.png" />
+            </a>
+            <div class="p-4 pb-5">
+              <a href="blog.html">
+                <h2 class="block text-xl font-semibold font-roboto text-gray-600 hover:text-gray-950 transition">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, vel.
+                </h2>
+              </a>
+              <p class="text-gray-400 text-sm mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas libero nobis fuga porro aliquid,
+                voluptatum cumque cupiditate facere nisi debitis quibusdam eos impedit, repudiandae ad ipsam quae
+                architecto sed rem!
+              </p>
+              <div class="mt-3 flex space-x-4">
+                <div class="flex text-gray-400 text-sm items-center">
+                  <span class="mr-2 text-sm">
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                  Administrator
+                </div>
+                <div class="flex text-gray-400 text-sm items-center">
+                  <span class="mr-2 text-sm">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  May 19 2023
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="w-full md:w-3/12 lg:w-3/12 xl:w-3/12">
+        <div class="bg-white  shadow-sm rounded-xl p-4 mr-4 ml-3">
+          <h3 class="text-xl font-semibold text-gray-700 font-roboto">Social Media</h3>
+          <div class="flex mt-4">
+            <a href="blog.html"
+              class="w-8 h-8 rounded-sm flex ml-1 mr-1 items-center justify-center border border-gray-600 text-base text-gray-800">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="blog.html"
+              class="w-8 h-8 rounded-sm flex ml-1 mr-1 items-center justify-center border border-gray-600 text-base text-gray-800">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="blog.html"
+              class="w-8 h-8 rounded-sm flex ml-1 mr-1 items-center justify-center border border-gray-600 text-base text-gray-800">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="blog.html"
+              class="w-8 h-8 rounded-sm flex ml-1 mr-1 items-center justify-center border border-gray-600 text-base text-gray-800">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+            <a href="blog.html"
+              class="w-8 h-8 rounded-sm flex ml-1 mr-1 items-center justify-center border border-gray-600 text-base text-gray-800">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="blog.html"
+              class="w-8 h-8 rounded-sm flex ml-1 mr-1 items-center justify-center border border-gray-600 text-base text-gray-800">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+
+
+
+
+
+          </div>
+        </div>
+        <div class="bg-white shadow-sm ml-3 shadow-white rounded-xl p-4 mt-5 mr-4">
+          <h3 class="text-xl font-semibold text-gray-800 font-roboto">Populer Post</h3>
+          <div class="mt-4">
+            <a href="blog.html" class="flex group mt-4">
+              <div class="flex-shrink-0">
+                <img src="./img/blog_1.jpg" class="h-14 w-20 rounded object-cover group-hover:brightness-50">
+              </div>
+              <div class="flex-grow pl-3">
+                <h5 class="text-sm block font-roboto font-semibold transition group-hover:text-gray-900">
+                  Lorem ipsum dolor sit amet dolor adipisicing.
+                </h5>
+                <div class="flex text-gray-400 text-xs items-center mt-1">
+                  <span class="mr-2 text-xs">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  May 29 2023
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mt-4">
+            <a href="blog.html" class="flex group mt-4">
+              <div class="flex-shrink-0">
+                <img src="./img/blog_2.jpg" class="h-14 w-20 rounded object-cover group-hover:brightness-50">
+              </div>
+              <div class="flex-grow pl-3">
+                <h5 class="text-sm block font-roboto font-semibold transition group-hover:text-gray-900">
+                  Lorem ipsum dolor sit amet dolor adipisicing.
+                </h5>
+                <div class="flex text-gray-400 text-xs items-center mt-1">
+                  <span class="mr-2 text-xs">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  May 29 2023
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mt-4">
+            <a href="blog.html" class="flex group mt-4">
+              <div class="flex-shrink-0">
+                <img src="./img/blog_3.jpg" class="h-14 w-20 rounded object-cover group-hover:brightness-50">
+              </div>
+              <div class="flex-grow pl-3">
+                <h5 class="text-sm block font-roboto font-semibold transition group-hover:text-gray-900">
+                  Lorem ipsum dolor sit amet dolor adipisicing.
+                </h5>
+                <div class="flex text-gray-400 text-xs items-center mt-1">
+                  <span class="mr-2 text-xs">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  May 29 2023
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white shadow-sm ml-3 p-4 mr-4 mt-5 rounded-xl">
+          <h3 class="text-xl font-semibold text-gray-700 font-roboto">Tags</h3>
+          <div class="flex flex-wrap items-center mt-4">
+            <a href="blog.html"
+              class="py-2 text-sm border m-1 border-gray-300 text-gray-500 px-3 transition hover:bg-gray-600 hover:text-cyan-50">
+              PHP
+            </a>
+            <a href="blog.html"
+              class="py-2 text-sm border m-1 border-gray-300 text-gray-500 px-3 transition hover:bg-gray-600 hover:text-cyan-50">
+              HTML
+            </a>
+            <a href="blog.html"
+              class="py-2 text-sm border m-1 border-gray-300 text-gray-500 px-3 transition hover:bg-gray-600 hover:text-cyan-50">
+              JAVA
+            </a>
+            <a href="blog.html"
+              class="py-2 text-sm border m-1 border-gray-300 text-gray-500 px-3 transition hover:bg-gray-600 hover:text-cyan-50">
+              LARAVEL
+            </a>
+            <a href="blog.html"
+              class="py-2 text-sm border m-1 border-gray-300 text-gray-500 px-3 transition hover:bg-gray-600 hover:text-cyan-50">
+              ASP.NET
+            </a>
+            <a href="blog.html"
+              class="py-2 text-sm border m-1 border-gray-300 text-gray-500 px-3 transition hover:bg-gray-600 hover:text-cyan-50">
+              MVC
+            </a>
+            <a href="blog.html"
+              class="py-2 text-sm border m-1 border-gray-300 text-gray-500 px-3 transition hover:bg-gray-600 hover:text-cyan-50">
+              CYBER SECURITY
+            </a>
+            <a href="blog.html"
+              class="py-2 text-sm border m-1 border-gray-300 text-gray-500 px-3 transition hover:bg-gray-600 hover:text-cyan-50">
+              COMPUTER ENGINEER
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sidebar End -->
+
+
+  <!-- Navbar Sidebar Start -->
+  <div
+    class="fixed w-full h-full bg-black bg-opacity-25 left-0 top-0 opacity-0 invisible transition-all duration-500 xl:hidden"
+    id="sidebar_wrapper">
+    <div class="fixed top-0 w-72 h-full bg-white shadow-sm flex flex-col transition-all duration-500" id="sidebar">
+      <div class="lg:hidden">
+        <div class="relative mx-3 mt-1 shadow-sm">
+          <span class="absolute left-3 top-0 text-sm text-gray-600">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input type="text" placeholder="Search..."
+            class="block w-full rounded-3xl pl-9 pr-2 focus:outline-none bg-gray-200 text-sm text-gray-600 shadow-sm shadow-slate-300 ">
+        </div>
+        <div class="font-roboto">
+          <a href="blog.html" class="flex px-4 py-1 mt-3 items-center text-xl hover:text-gray-900 transition ">
+            <span class="mr-2"> <i class="fa-solid fa-house"></i> </span>
+            Home
+          </a>
+        </div>
+        <div class="font-roboto">
+          <a href="blog.html" class="flex px-4 py-1 mt-3 items-center text-xl hover:text-gray-900 transition ">
+            <span class="mr-2"> <i class="fa-solid fa-cloud"></i> </span>
+            About
+          </a>
+        </div>
+        <div class="font-roboto">
+          <a href="blog.html" class="flex px-4 py-1 mt-3 items-center text-xl hover:text-gray-900 transition ">
+            <span class="mr-2"> <i class="fa-solid fa-address-book"></i> </span>
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar Sidebar End -->
+
+
+  <!-- Footer Start -->
+  <footer class="border-t py-4">
+    <p class="text-center text-sm">Copyright @ 2023 <span class="font-semibold">Mщhammed Gardashov </span> All Rights Reserved</p>
+  </footer>
+  <!-- Footer End -->
+
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
